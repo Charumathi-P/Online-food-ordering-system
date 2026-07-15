@@ -1,0 +1,11 @@
+String sql = "INSERT INTO orders(user_id,total_amount,status) VALUES(?,?,?)";
+
+PreparedStatement ps = con.prepareStatement(sql);
+
+ps.setInt(1,1);
+ps.setDouble(2,500);
+ps.setString(3,"Pending");
+
+ps.executeUpdate();
+
+System.out.println("Order Placed");
