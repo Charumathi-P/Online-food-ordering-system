@@ -1,0 +1,13 @@
+Connection con = DBConnection.getConnection();
+
+String sql = "INSERT INTO food(name,price,category) VALUES(?,?,?)";
+
+PreparedStatement ps = con.prepareStatement(sql);
+
+ps.setString(1, "Pizza");
+ps.setDouble(2, 250);
+ps.setString(3, "Fast Food");
+
+ps.executeUpdate();
+
+System.out.println("Food Added Successfully");
