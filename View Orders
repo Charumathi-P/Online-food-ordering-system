@@ -1,0 +1,11 @@
+ResultSet rs = st.executeQuery("SELECT * FROM orders");
+
+while(rs.next()){
+
+    System.out.println(
+        rs.getInt("id")+" "+
+        rs.getDouble("total_amount")+" "+
+        rs.getString("status")
+    );
+
+}
