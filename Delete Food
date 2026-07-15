@@ -1,0 +1,7 @@
+String sql = "DELETE FROM food WHERE id=?";
+
+PreparedStatement ps = con.prepareStatement(sql);
+
+ps.setInt(1,5);
+
+ps.executeUpdate();
