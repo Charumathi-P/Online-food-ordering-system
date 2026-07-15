@@ -1,0 +1,9 @@
+String sql="UPDATE food SET price=? WHERE id=?";
+
+PreparedStatement ps=con.prepareStatement(sql);
+
+ps.setDouble(1,300);
+
+ps.setInt(2,1);
+
+ps.executeUpdate();
