@@ -1,0 +1,15 @@
+Connection con = DBConnection.getConnection();
+
+Statement st = con.createStatement();
+
+ResultSet rs = st.executeQuery("SELECT * FROM food");
+
+while(rs.next()){
+
+    System.out.println(
+        rs.getInt("id")+" "+
+        rs.getString("name")+" "+
+        rs.getDouble("price")
+    );
+
+}
