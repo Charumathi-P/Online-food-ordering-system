@@ -1,0 +1,15 @@
+Online-Food-Ordering-System/
+│── src/
+│── database/
+│── images/
+│── css/
+│── js/
+│── index.html
+│── login.html
+│── register.html
+│── menu.html
+│── cart.html
+│── checkout.html
+│── admin/
+│── README.md
+```
